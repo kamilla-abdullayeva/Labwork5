@@ -1,0 +1,49 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>Login</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 style="text-align: center;">Login</h1>-->
+<!--<form th:action="@{/login}" method="post" style="text-align: center;">-->
+<!--    <label>Username:</label>-->
+<!--    <input type="text" name="username" required/>-->
+<!--    </br>-->
+<!--    <label>Password:</label>-->
+<!--    <input type="password" name="password" required/>-->
+<!--    <br/>-->
+<!--    <button type="submit">Login</button>-->
+<!--</form>-->
+<!--<a href="/register">Don't have an account? Register</a>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+</head>
+<body>
+<h1 style="text-align: center;">Login</h1>
+<form th:action="@{/login}" method="post" style="text-align: center;">
+    <div style="margin-bottom: 15px;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required style="width: 20%; padding: 8px;">
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <label for="username">Password:</label>
+        <input type="password" id="password" name="password" required style="width: 20%; padding: 8px;">
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button type="submit" style="padding: 10px 15px; background-color: dodgerblue; border-radius: 5px;">
+            Login
+        </button>
+    </div>
+</form>
+<div style="text-align: center;">
+    <a href="/register">Don't have an account? Register</a>
+</div>
+</body>
+</html>
+
